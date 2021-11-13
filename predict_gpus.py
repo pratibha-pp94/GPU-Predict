@@ -15,7 +15,7 @@ from scipy.optimize import curve_fit
 class predict_gpus:
     def predict(year):
         #Import dataset from csv file
-        dataset = pd.read_csv(r'D:\QMUL\MSC_PRJ\nirbhay\MainProject\MainProject\All_GPUs.csv')
+        dataset = pd.read_csv(r'All_GPUs.csv')
 
         """Let's try to summarize the Dataset"""
 
