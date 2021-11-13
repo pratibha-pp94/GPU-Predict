@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<link rel="shortcut icon" href="#" />
+    <title>GPU prediction</title>
+  </head>
+  <body>
+	  <div class = "login">
+
+		<h1>Predict GPU </h1>
+		<p>Enter the year
+		</p>
+		<form action="/predict"method="post">
+			<input type="number" name="year" placeholder="year" required="required">
+			<button type="submit"> Predict </button>
+		</form><br>
+		<br>
+
+		{{ prediction_text }}
+
+	  </div>
+  </body>
+</html>
