@@ -87,16 +87,16 @@ class predict_gpus:
         from sklearn.metrics import r2_score
 
         # 2nd degree curve
-        score = r2_score(y_pred_linear_reg_2, mean_array_mem)
+        score = r2_score(mean_array_mem, y_pred_linear_reg_2)
         print("r2 of 2nd degree curve is equal " + str(round(score, 3)))
         # 3rd degree curve
-        score = r2_score(y_pred_linear_reg_3, mean_array_mem)
+        score = r2_score(mean_array_mem, y_pred_linear_reg_3)
         print("r2 of 3rd degree curve is equal " + str(round(score, 3)))
         # Calculated Moore's Law curve
-        score = r2_score(y_pred_calMoore, mean_array_mem)
+        score = r2_score(mean_array_mem, y_pred_calMoore)
         print("r2 of Calculated Moore's Law curve is equal " + str(round(score, 3)))
         # Fitted Moore's Law curve
-        score = r2_score(y_pred_MooreFit, mean_array_mem)
+        score = r2_score(mean_array_mem, y_pred_MooreFit)
         print("r2 of Fitted Moore's Law curve is equal " + str(round(score, 3)))
 
         ### """ Basing on above r2 scores selecting Fitted Moore's Law curve for predicting GPUs Mean Memory Size."""
