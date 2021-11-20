@@ -1,15 +1,21 @@
 # GPU-Predict
 
-##Overview:
+#Overview:
+
 This is the repository for mean GPU memory prediction.
 
 Files required:
+
 requirement.txt
 
 predict_gpus.py
+
 app.py
+
 Procfile
+
 All_GPU.CSV
+
 templates/index.html
 
 How it works:
