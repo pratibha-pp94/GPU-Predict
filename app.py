@@ -18,7 +18,7 @@ def predict():
 
 	prediction = predict_gpus.predict(year)
 	print(prediction)
-	return render_template('index.html', prediction_text="Predicted mean size of GPU memory is {}".format(prediction))
+	return render_template('index.html', prediction_text="Predicted mean size of GPU memory in GB is {}".format(prediction))
 
 if __name__ == '__main__':
     app.run(debug=True)
